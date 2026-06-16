@@ -195,9 +195,10 @@ def main():
                 sortable=True,
                 minWidth=100,
                 width=150,
-                wrapText=True,
-                autoHeight=True,
+                wrapText=False,
+                autoHeight=False,
             )
+            gb.configure_grid_options(rowHeight=35)
             gb.configure_grid_options(domLayout="normal")
             dest_grid_options = gb.build()
 
